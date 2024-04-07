@@ -333,11 +333,11 @@ exports.postNodejsCompiler = (req, res, next) => {
     script: code,
     stdin: input,
     language: "nodejs",
-    clientId: "6ba6faf5b206623b11d904b2c26a3f42",
-    clientSecret: "b604a86ad865142f00721daa7f4621731d7e25b732ae5504151e0e75486d02a7",
+    versionIndex: version,
+    clientId: client_id,
+    clientSecret: client_secret,
   };
   try {
-    console.log("Program"+program)
     request(
       {
         url: "https://api.jdoodle.com/v1/execute",
