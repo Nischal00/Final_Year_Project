@@ -1,0 +1,201 @@
+.main-page {
+  margin-top: 60px;
+  height: 30vh;
+}
+body {
+  background-color: white;
+}
+
+.wrapper-page {
+  width: 100%;
+
+  margin-top: 12vh;
+  overflow: auto;
+}
+
+.intro-heading-page {
+  margin: 3vh;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 47px;
+  font-family: "Roboto", sans-serif;
+  color: #203354;
+}
+
+.intro-para-page {
+  font-size: 22px;
+  color: #203354;
+}
+
+.try-demo-page {
+  background-color: #6767e7;
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: sans-serif;
+  border-radius: 3px;
+  margin-top: 30px;
+}
+.try-demo-page:hover {
+  background-color: #2ecc71;
+}
+
+.video-lapse-page {
+  margin-top: 10vh;
+}
+
+video {
+  border-radius: 5px;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-page {
+  margin-top: 8vh;
+  display: flex;
+}
+
+.what-entercoding-page {
+  flex: 1;
+}
+
+.image-section-page {
+  flex: 1;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  color: #203354;
+  padding: 10px;
+}
+
+.entercoding-image-page {
+  width: 95%;
+
+  border-radius: 5px;
+}
+.what-entercoding-para-page {
+  font-size: 22px;
+  color: #203354;
+  text-align: left;
+}
+
+.feature-temp-page {
+  height: 8vh;
+}
+
+.mac-image-page {
+  margin-top: 10vh;
+}
+
+.mac-pic-page {
+  padding-top: 5vh;
+  width: 70%;
+}
+
+.why-entercoding-page {
+  margin-top: 8vh;
+  background: rgb(236, 231, 231);
+  overflow: auto;
+}
+
+.why-entercoding-inner-page {
+  margin-top: 10vh;
+  display: flex;
+  text-align: center;
+}
+
+.reason-1-page {
+  flex: 1;
+}
+.reason-2-page {
+  flex: 1;
+}
+.reason-3-page {
+  flex: 1;
+}
+
+h6 {
+  font-family: "Roboto", sans-serif;
+  color: #203354;
+  padding-top: 25px;
+  font-size: 20px;
+}
+
+.reason3-para-page,
+.reason2-para-page,
+.reason1-para-page {
+  font-size: 15px;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+  color: #203354;
+  padding: 10px 20px 50px 30px;
+}
+
+.last-section-page {
+  margin-top: 10vh;
+}
+
+.enjoy-page {
+  font-size: 34px;
+  font-family: "Roboto", sans-serif;
+  color: #3d3d3f;
+}
+
+.recruit-page {
+  margin-top: 5vh;
+  font-size: 38px;
+  font-family: "Roboto", sans-serif;
+  color: #203354;
+}
+
+.special-word-page {
+  color: #2ecc71;
+}
+
+.outro-entercoding-para-page {
+  margin-top: 5vh;
+  font-size: 22px;
+  color: #203354;
+  margin-left: 160px;
+  margin-right: 160px;
+  padding: 10px;
+}
+
+@media (max-width: 1000px) {
+  .about-page {
+    display: block;
+  }
+
+  .why-entercoding-inner-page {
+    display: block;
+  }
+
+  .what-entercoding-page {
+    width: 100%;
+  }
+
+  .what-entercoding-para-page {
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  .entercoding-image-page {
+    width: 100%;
+    border-radius: 5px;
+    padding-top: 15px;
+  }
+
+  .video-lapse-page {
+    width: 85%;
+  }
+}

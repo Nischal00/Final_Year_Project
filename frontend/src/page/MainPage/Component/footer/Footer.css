@@ -1,0 +1,20 @@
+footer {
+  margin-top: 8vh;
+  bottom: 0px;
+  width: 100%;
+}
+
+.bottom center {
+  background: #161f2e;
+  height: 3.5vh;
+}
+
+.bottom center span {
+  color: #656565;
+  font-size: 13px;
+}
+.bottom center a {
+  color: #f12020;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,142 @@
+.icon-button-font {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
+  color: #007aff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-button-text {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: default;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 16px;
+  outline: none;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-button-font:active {
+  transform: translateY(2px);
+}
+
+.icon-button-font:hover {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-font-item {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius);
+  transition: background var(--speed);
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  cursor: default;
+  text-decoration: none;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+}
+
+.menu-font-item:focus {
+  outline: none;
+}
+
+.menu-item {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius);
+  transition: background var(--speed);
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu-item:focus {
+  outline: none;
+}
+
+.menu-item .icon-button {
+  margin-right: 0.5rem;
+}
+
+.menu-item .icon-button:hover {
+  filter: none;
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dropdown-setting {
+  position: absolute;
+  z-index: 101;
+  right: 10px;
+  backdrop-filter: blur(10px);
+  bottom: 50px;
+  width: 275px;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: height var(--speed) ease;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu-secondary-enter {
+  transform: translateX(110%);
+}
+.menu-secondary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+.menu-secondary-exit-active {
+  transform: translateX(110%);
+  transition: all var(--speed) ease;
+}
+
+/* CSSTransition classes  */
+.menu-primary-enter {
+  position: absolute;
+  transform: translateX(-110%);
+}
+.menu-primary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+.menu-primary-exit {
+  position: absolute;
+}
+.menu-primary-exit-active {
+  transform: translateX(-110%);
+  transition: all var(--speed) ease;
+}

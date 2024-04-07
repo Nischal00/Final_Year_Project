@@ -1,0 +1,183 @@
+.main-blog {
+  margin-top: 60px;
+  height: 30vh;
+}
+
+.mainImage-blog {
+  width: 100%;
+}
+
+.entercodingJourney-blog {
+  margin-top: 8vh;
+  display: flex;
+}
+
+.journey-heading-blog {
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  color: #203354;
+  margin-bottom: 40px;
+}
+
+.inner-journey-blog {
+  color: #20ce68;
+}
+
+.journey-div-blog {
+  margin-top: 80px;
+}
+
+hr {
+  border-top: 1px solid rgb(202, 202, 202);
+}
+
+.title-journey-blog {
+  color: #203354;
+}
+
+.idea-image-blog {
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  transition: transform 0.8s;
+}
+
+/* .idea-image:hover {
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.yjs-image:hover {
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.firepad-image:hover {
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.webrtc-image:hover {
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+} */
+
+.yjs-image-blog {
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  transition: transform 0.8s;
+}
+
+.webrtc-image-blog {
+  width: 100%;
+
+  padding-left: 60px;
+  padding-right: 60px;
+  transition: transform 0.8s;
+}
+
+.firepad-image-blog {
+  width: 100%;
+
+  padding-left: 60px;
+  padding-right: 60px;
+  transition: transform 0.8s;
+}
+
+.idea-para-blog,
+.yjs-para-blog,
+.firepad-para-blog,
+.webrtc-para-blog {
+  font-size: 18.5px;
+  color: #747474;
+  text-align: left;
+
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.problem-yjs-blog {
+  flex: 1;
+}
+
+.image-section-blog {
+  flex: 1;
+}
+
+.ourteam-section-blog {
+  /* background: rgb(236, 231, 231); */
+  background-color: #203354;
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.team-lead-heading-blog {
+  font-size: 40px;
+}
+
+.team-lead-div-blog {
+  margin-top: 40px;
+}
+
+.team1-blog {
+  flex: 1;
+}
+.team2-blog {
+  flex: 1;
+}
+
+.team3-blog {
+  flex: 1;
+}
+
+.team4-blog {
+  flex: 1;
+}
+
+.team-image-blog {
+  width: 100%;
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 10px;
+}
+
+.bio-name-blog {
+  color: white;
+  font-size: 20px;
+}
+
+.bio-post-blog {
+  color: white;
+  font-size: 15px;
+  padding-bottom: 30px;
+}
+
+.special-word-thank-blog {
+  color: #2ecc71;
+}
+
+@media (max-width: 1000px) {
+  .mainImage-blog {
+    height: 60vh;
+  }
+  .CodeQuantaJourney-blog {
+    display: block;
+  }
+  .ourteam-section-blog {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .mainImage-blog {
+    height: 40vh;
+  }
+}

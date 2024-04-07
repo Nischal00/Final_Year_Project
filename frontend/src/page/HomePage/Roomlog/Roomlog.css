@@ -1,0 +1,123 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+/*Message general font and color*/
+.message {
+  font-size: 15px !important;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+input[type="file"] {
+  cursor: pointer;
+  width: 180px;
+  height: 44px;
+  overflow: hidden;
+}
+
+input[type="file"]:before {
+  width: 158px;
+  height: 52px;
+  font-size: 16px;
+  line-height: 30px;
+  content: "Choose File";
+  display: inline-block;
+  background: #2e30bb;
+  color: white;
+
+  padding-top: 8px;
+  padding-right: 22px;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.chatWindow {
+  height: 94.5vh;
+  display: grid;
+  row-gap: 10px;
+  width: 100%;
+  position: relative;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* M E S S A G E S */
+.chat {
+  height: 86.5vh;
+  /* background-color: green; */
+  /* height: inherit; */
+  margin-bottom: 55px;
+  list-style: none;
+  background: none;
+  padding: 0 0 0px 0;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+.chat li {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 5px;
+  overflow: hidden;
+  display: flex;
+}
+
+.msg {
+  display: flex;
+  flex-direction: row;
+  min-width: fit-content;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 134px;
+}
+
+/*user name*/
+.msg p {
+  font-size: 16px !important;
+  padding-top: 2px;
+  padding-right: 15px;
+  font-family: Aldrich;
+  margin: 0 0 0.2rem 0;
+  color: cyan;
+}
+
+input.textarea {
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 45px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  font-weight: 400;
+}
+
+.chatInputWrapper {
+  height: inherit;
+  height: 94.5vh;
+  position: relative;
+}
+
+input.textarea::-webkit-input-placeholder {
+  color: #e5e5e5;
+}
+
+@media screen and (max-width: 800px) {
+  .msg img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .msg img {
+    width: 200px;
+  }
+}

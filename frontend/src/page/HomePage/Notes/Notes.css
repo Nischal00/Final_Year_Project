@@ -1,0 +1,26 @@
+.public-DraftEditor-content {
+  background: transparent;
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding: 1em;
+  margin-top: 60px;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  padding-right: 140px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.notes-title {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 1em;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-right: 150px;
+  word-wrap: break-word;
+  word-break: break-all;
+}

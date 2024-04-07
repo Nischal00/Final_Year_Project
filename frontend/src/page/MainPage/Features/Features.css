@@ -1,0 +1,139 @@
+.main-feature {
+  margin-top: 60px;
+  height: 30vh;
+}
+
+.featureIntro-feature {
+  padding-top: 80px;
+}
+
+h2 {
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+
+  padding: 15px;
+}
+
+h3 {
+  font-size: 27px;
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+}
+
+.start-entercoding-feature {
+  background-color: #6767e7;
+  border: none;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: sans-serif;
+  border-radius: 3px;
+  margin-top: 25px;
+}
+
+.start-entercoding-feature:hover {
+  background-color: #2ecc71;
+}
+
+.feature-horizontal-feature {
+  margin-top: 80px;
+  background-color: #d6d6d6;
+}
+
+.language-feature,
+.editor-feature,
+.saveprevious-feature,
+.audiovideo-feature,
+.collaboration-feature {
+  margin-top: 8vh;
+  display: flex;
+}
+
+/* .editor {
+  margin-top: 8vh;
+  display: flex;
+}
+
+.audiovideo {
+  margin-top: 8vh;
+  display: flex;
+}
+
+.collaboration {
+  margin-top: 8vh;
+  display: flex;
+}
+
+.saveprevious {
+  margin-top: 8vh;
+  display: flex;
+} */
+
+/* for ordering making separate id */
+
+.feature-image-feature {
+  width: 95%;
+  height: 97%;
+  border-radius: 5px;
+}
+
+.what-language-feature,
+.what-editor-feature,
+.what-saveprevious-feature,
+.what-collaboration-feature,
+.what-audiovideo-feature {
+  flex: 1;
+  padding: 30px;
+}
+
+.what-para-feature {
+  font-size: 22px;
+  color: #203354;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.feature-image-language-feature,
+.feature-image-editor-feature,
+.feature-image-audiovideo-feature,
+.feature-image-collaboration-feature,
+.feature-image-saveprevious-feature {
+  flex: 1;
+  padding: 25px;
+}
+
+h3 {
+  font-size: 40;
+}
+
+.other-features-feature {
+  font-size: 25px;
+  margin-top: 40px;
+  color: #2ecc71;
+}
+.ending-horizontal-feature {
+  margin-top: 40px;
+  background-color: #d6d6d6;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+  .language-feature,
+  .editor-feature,
+  .saveprevious-feature,
+  .audiovideo-feature,
+  .collaboration-feature {
+    display: flex;
+    flex-direction: column;
+  }
+  .feature-image-language-feature,
+  .feature-image-audiovideo-feature,
+  .feature-image-saveprevious-feature {
+    order: 1;
+  }
+}

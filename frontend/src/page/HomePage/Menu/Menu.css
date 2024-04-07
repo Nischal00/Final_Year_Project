@@ -1,0 +1,123 @@
+.top-bar {
+  height: 5.5vh;
+  width: 100%;
+  display: flex;
+  backdrop-filter: blur(10px);
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.projectName {
+  background-color: inherit;
+  color: cyan;
+  width: 70px;
+  border: 1;
+  /* border-style: dashed; */
+  text-align: center;
+  font-size: 15px;
+  font-family: Aldrich;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.projectName:focus {
+  outline: none;
+}
+
+.projectName:hover {
+  filter: brightness(1.5);
+}
+
+.invite-button {
+  font-size: 15px;
+  font-family: Aldrich;
+  background-color: transparent;
+  outline-width: 0px;
+  border: 0;
+}
+
+.user-button {
+  font-size: 15px;
+  font-family: Aldrich;
+  background-color: transparent;
+  outline-width: 0px;
+  border: 0;
+}
+
+.output-button {
+  display: block;
+  font-size: 15px;
+  font-family: Aldrich;
+  background-color: transparent;
+  outline-width: 0px;
+  border: 0;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.notes-button {
+  font-size: 15px;
+  font-family: Aldrich;
+  background-color: transparent;
+  outline-width: 0px;
+  border: 0;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.output-button:focus,
+.notes-button:focus,
+.invite-button:focus,
+.user-button:focus {
+  outline: none;
+}
+
+.output-button:hover,
+.notes-button:hover,
+.invite-button:hover,
+.user-button:hover {
+  filter: brightness(1.5);
+}
+
+.output-notes-wrapper {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.endIn-button {
+  background-color: inherit;
+  color: cyan;
+  width: 70px;
+  border: 1;
+  /* border-style: dashed; */
+  text-align: center;
+  font-size: 15px;
+  font-family: Aldrich;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.endIn-button:focus {
+  outline: none;
+}
+
+.endIn-button:hover {
+  filter: brightness(1.5);
+}
+
+.network-status {
+  height: 4px;
+  width: 4px;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-btn {
+  display: block;
+  margin-right: 15px;
+  cursor: pointer;
+}
