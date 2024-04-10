@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Navbar.css";
 import menuicon from "../../../../assets/images/svg/menuicon.svg";
 import crossicon from "../../../../assets/images/svg/crossicon.svg";
-import EnterCodingLogo from "../../../../assets/images/navbar/EnterCodingLogo.png";
+// import EnterCodingLogo from "../../../../assets/images/navbar/EnterCodingLogo.png";
 import { Link } from "react-router-dom";
 
 class Navbar extends Component {
