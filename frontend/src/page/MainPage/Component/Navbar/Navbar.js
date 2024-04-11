@@ -3,6 +3,7 @@ import "./Navbar.css";
 import menuicon from "../../../../assets/images/svg/menuicon.svg";
 import crossicon from "../../../../assets/images/svg/crossicon.svg";
 // import EnterCodingLogo from "../../../../assets/images/navbar/EnterCodingLogo.png";
+import codequanta from "../../../../assets/images/navbar/codequanta.png";
 import { Link } from "react-router-dom";
 
 class Navbar extends Component {
@@ -16,7 +17,7 @@ class Navbar extends Component {
             <img src={crossicon} alt="cancel" id="cancel" />
           </label>
           <Link to="/">
-            {/* <img src={EnterCodingLogo} alt="logo" className="logo" /> */}
+            <img src={codequanta} alt="logo" className="logo" />
           </Link>
           <ul>
             <Link to="/">
@@ -27,6 +28,9 @@ class Navbar extends Component {
             </Link>
             <Link to="/blogs">
               <li>Blog</li>
+            </Link>
+            <Link to="/blogs">
+              <li>Donate</li>
             </Link>
           </ul>
         </nav>
