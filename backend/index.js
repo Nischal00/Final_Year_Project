@@ -27,7 +27,7 @@ const editorReadOnly = {};
 
 const app = express();
 
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(bodyParser.json());
 
@@ -173,13 +173,13 @@ peers.on("connection", (socket) => {
       disconnectedPeer(socket.id);
     });
 
-    // socket.on("socket-to-disconnect", (socketIDToDisconnect) => {
-    //   console.log("socket end disconnect");
+    socket.on("socket-to-disconnect", (socketIDToDisconnect) => {
+      console.log("socket end disconnect");
 
-    //   rooms[room].delete(socketIDToDisconnect);
-    //   messages[room] = rooms[room].size === 0 ? null : messages[room];
-    //   disconnectedPeer(socketIDToDisconnect);
-    // });
+      rooms[room].delete(socketIDToDisconnect);
+      messages[room] = rooms[room].size === 0 ? null : messages[room];
+      disconnectedPeer(socketIDToDisconnect);
+    });
 
     socket.on("onlinePeers", (data) => {
       const _connectedPeers = rooms[room];

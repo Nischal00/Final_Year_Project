@@ -198,12 +198,12 @@ class HomePage extends Component {
       };
 
       pc.oniceconnectionstatechange = (e) => {
-        // if (pc.iceConnectionState === 'disconnected') {
-        //   const remoteStreams = this.state.remoteStreams.filter(stream => stream.id !== socketID)
-        //   this.setState({
-        //     remoteStream: remoteStreams.length > 0 && remoteStreams[0].stream || null,
-        //   })
-        // }
+        if (pc.iceConnectionState === 'disconnected') {
+          const remoteStreams = this.state.remoteStreams.filter(stream => stream.id !== socketID)
+          this.setState({
+            remoteStream: remoteStreams.length > 0 && remoteStreams[0].stream || null,
+          })
+        }
       };
 
       pc.ontrack = (e) => {
@@ -1043,14 +1043,14 @@ class HomePage extends Component {
   };
 
   render() {
-    if (this.state.permissionDenied) {
-      return (
-        <NoAccess
-          history={this.props.history}
-          handleDisconnectPermission={this.handleDisconnectPermission}
-        />
-      );
-    }
+    // if (this.state.permissionDenied) {
+    //   return (
+    //     <NoAccess
+    //       history={this.props.history}
+    //       handleDisconnectPermission={this.handleDisconnectPermission}
+    //     />
+    //   );
+    // }
     return (
       <div>
         <div className="main-div">

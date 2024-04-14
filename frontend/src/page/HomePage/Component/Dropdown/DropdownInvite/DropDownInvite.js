@@ -112,7 +112,7 @@ class DropDownInvite extends Component {
   requestToAPI = async () => {
     try {
       await axios.post(
-        "https://entercoding-api-gces.herokuapp.com/inviteothers",
+        "http://localhost:8080/inviteothers",
         {
           emailId: this.state.items,
           roomId: this.props.roomID,
