@@ -198,11 +198,14 @@ class HomePage extends Component {
       };
 
       pc.oniceconnectionstatechange = (e) => {
-        if (pc.iceConnectionState === 'disconnected') {
-          const remoteStreams = this.state.remoteStreams.filter(stream => stream.id !== socketID)
+        if (pc.iceConnectionState === "disconnected") {
+          const remoteStreams = this.state.remoteStreams.filter(
+            (stream) => stream.id !== socketID
+          );
           this.setState({
-            remoteStream: remoteStreams.length > 0 && remoteStreams[0].stream || null,
-          })
+            remoteStream:
+              (remoteStreams.length > 0 && remoteStreams[0].stream) || null,
+          });
         }
       };
 
@@ -301,15 +304,15 @@ class HomePage extends Component {
         }
         const config = {
           // apiKey: "AIzaSyA5nYeooM0GO6hgan73XCsvfZPykfHjfXs",
-          apiKey: "AIzaSyDKK-uAr09X2I3QfJjt_Ft0nzx-CKgvOKM",
-          databaseURL: "https://final-year-project-3553d-default-rtdb.firebaseio.com/",
           // apiKey: "AIzaSyDKK-uAr09X2I3QfJjt_Ft0nzx-CKgvOKM",
-          // authDomain: "final-year-project-3553d.firebaseapp.com",
-          // projectId: "final-year-project-3553d",
-          // storageBucket: "final-year-project-3553d.appspot.com",
-          // messagingSenderId: "1045507360080",
-          // appId: "1:1045507360080:web:a5a4700367ae80cc29d855",
-          // measurementId: "G-64GNZ48RE7",
+          databaseURL:"https://final-year-project-3553d-default-rtdb.firebaseio.com/",
+          apiKey: "AIzaSyDKK-uAr09X2I3QfJjt_Ft0nzx-CKgvOKM",
+          authDomain: "final-year-project-3553d.firebaseapp.com",
+          projectId: "final-year-project-3553d",
+          storageBucket: "final-year-project-3553d.appspot.com",
+          messagingSenderId: "1045507360080",
+          appId: "1:1045507360080:web:a5a4700367ae80cc29d855",
+          measurementId: "G-64GNZ48RE7",
         };
         window.firebase.initializeApp(config);
 
